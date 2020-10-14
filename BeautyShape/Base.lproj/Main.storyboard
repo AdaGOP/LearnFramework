@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BeautyShape" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPH-jY-S9d">
+                                <rect key="frame" x="20" y="94" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2US-8b-TJ7"/>
+                                </constraints>
+                                <state key="normal" title="First Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcr-34-skD">
+                                <rect key="frame" x="20" y="158" width="374" height="88"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.66666666669999997" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="oiZ-0g-EI6"/>
+                                </constraints>
+                                <state key="normal" title="Second Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bn6-CA-PZd">
+                                <rect key="frame" x="20" y="247" width="374" height="88"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.66666666669999997" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Third Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OPH-jY-S9d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="6Gz-Oz-Use"/>
+                            <constraint firstItem="Bn6-CA-PZd" firstAttribute="top" secondItem="wcr-34-skD" secondAttribute="bottom" constant="1" id="DPO-dI-XCx"/>
+                            <constraint firstItem="wcr-34-skD" firstAttribute="leading" secondItem="OPH-jY-S9d" secondAttribute="leading" id="G8X-En-mwK"/>
+                            <constraint firstItem="Bn6-CA-PZd" firstAttribute="height" secondItem="wcr-34-skD" secondAttribute="height" id="Ps4-cE-WtW"/>
+                            <constraint firstItem="wcr-34-skD" firstAttribute="trailing" secondItem="OPH-jY-S9d" secondAttribute="trailing" id="bV2-no-Xhi"/>
+                            <constraint firstItem="Bn6-CA-PZd" firstAttribute="leading" secondItem="wcr-34-skD" secondAttribute="leading" id="gih-sK-DPZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OPH-jY-S9d" secondAttribute="trailing" constant="20" id="j2B-hR-RTh"/>
+                            <constraint firstItem="Bn6-CA-PZd" firstAttribute="trailing" secondItem="wcr-34-skD" secondAttribute="trailing" id="mBa-og-qq8"/>
+                            <constraint firstItem="wcr-34-skD" firstAttribute="top" secondItem="OPH-jY-S9d" secondAttribute="bottom" constant="20" id="pcQ-8L-LPS"/>
+                            <constraint firstItem="OPH-jY-S9d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q0A-Lo-fGd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstButton" destination="OPH-jY-S9d" id="EAZ-vP-5QU"/>
+                        <outlet property="secondButton" destination="wcr-34-skD" id="dys-Kz-l8t"/>
+                        <outlet property="thirdButton" destination="Bn6-CA-PZd" id="zfR-Wt-Wwn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
