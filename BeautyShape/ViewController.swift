@@ -12,17 +12,22 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var thirdButton: UIButton! {
         didSet {
-            CustomButton.roundedBottompRightBottomLeft(view: thirdButton)
+            thirdButton.clipsToBounds = true
+            thirdButton.layer.cornerRadius = 10
+            thirdButton.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner] // Bottom right corner, Bottom left corner respectively
         }
     }
     @IBOutlet weak var secondButton: UIButton! {
         didSet {
-            CustomButton.roundedTopRightTopLeft(view: secondButton)
+            secondButton.clipsToBounds = true
+            secondButton.layer.cornerRadius = 10
+            secondButton.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner] // Top right corner, Top left corner respectively
         }
     }
     @IBOutlet weak var firstButton: UIButton! {
         didSet {
-            CustomButton.roundedAllCorner(view: firstButton)
+            firstButton.layer.cornerRadius = 5.0
+            firstButton.layer.masksToBounds = true
         }
     }
     override func viewDidLoad() {

@@ -13,8 +13,18 @@
 		E64E896125369BAD0097AE69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64E895F25369BAD0097AE69 /* Main.storyboard */; };
 		E64E896325369BB00097AE69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64E896225369BB00097AE69 /* Assets.xcassets */; };
 		E64E896625369BB00097AE69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64E896425369BB00097AE69 /* LaunchScreen.storyboard */; };
-		E64E896E25369CCE0097AE69 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64E896D25369CCE0097AE69 /* CustomButton.swift */; };
+		E64E89C42536F9280097AE69 /* BeautyShapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64E89C32536F9280097AE69 /* BeautyShapeTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E64E89C62536F9280097AE69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E64E894E25369BAD0097AE69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E64E895525369BAD0097AE69;
+			remoteInfo = BeautyShape;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E64E895625369BAD0097AE69 /* BeautyShape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyShape.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,11 +35,20 @@
 		E64E896225369BB00097AE69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E64E896525369BB00097AE69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E64E896725369BB00097AE69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E64E896D25369CCE0097AE69 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		E64E89C12536F9280097AE69 /* BeautyShapeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyShapeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64E89C32536F9280097AE69 /* BeautyShapeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyShapeTests.swift; sourceTree = "<group>"; };
+		E64E89C52536F9280097AE69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E64E895325369BAD0097AE69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64E89BE2536F9280097AE69 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				E64E895825369BAD0097AE69 /* BeautyShape */,
+				E64E89C22536F9280097AE69 /* BeautyShapeTests */,
 				E64E895725369BAD0097AE69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				E64E895625369BAD0097AE69 /* BeautyShape.app */,
+				E64E89C12536F9280097AE69 /* BeautyShapeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,9 +86,17 @@
 				E64E896225369BB00097AE69 /* Assets.xcassets */,
 				E64E896425369BB00097AE69 /* LaunchScreen.storyboard */,
 				E64E896725369BB00097AE69 /* Info.plist */,
-				E64E896D25369CCE0097AE69 /* CustomButton.swift */,
 			);
 			path = BeautyShape;
+			sourceTree = "<group>";
+		};
+		E64E89C22536F9280097AE69 /* BeautyShapeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E64E89C32536F9280097AE69 /* BeautyShapeTests.swift */,
+				E64E89C52536F9280097AE69 /* Info.plist */,
+			);
+			path = BeautyShapeTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +119,24 @@
 			productReference = E64E895625369BAD0097AE69 /* BeautyShape.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E64E89C02536F9280097AE69 /* BeautyShapeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E64E89CA2536F9280097AE69 /* Build configuration list for PBXNativeTarget "BeautyShapeTests" */;
+			buildPhases = (
+				E64E89BD2536F9280097AE69 /* Sources */,
+				E64E89BE2536F9280097AE69 /* Frameworks */,
+				E64E89BF2536F9280097AE69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E64E89C72536F9280097AE69 /* PBXTargetDependency */,
+			);
+			name = BeautyShapeTests;
+			productName = BeautyShapeTests;
+			productReference = E64E89C12536F9280097AE69 /* BeautyShapeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +149,10 @@
 				TargetAttributes = {
 					E64E895525369BAD0097AE69 = {
 						CreatedOnToolsVersion = 11.1;
+					};
+					E64E89C02536F9280097AE69 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = E64E895525369BAD0097AE69;
 					};
 				};
 			};
@@ -119,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				E64E895525369BAD0097AE69 /* BeautyShape */,
+				E64E89C02536F9280097AE69 /* BeautyShapeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -134,6 +186,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E64E89BF2536F9280097AE69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,14 +200,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E64E896E25369CCE0097AE69 /* CustomButton.swift in Sources */,
 				E64E895E25369BAD0097AE69 /* ViewController.swift in Sources */,
 				E64E895A25369BAD0097AE69 /* AppDelegate.swift in Sources */,
 				E64E895C25369BAD0097AE69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E64E89BD2536F9280097AE69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64E89C42536F9280097AE69 /* BeautyShapeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E64E89C72536F9280097AE69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E64E895525369BAD0097AE69 /* BeautyShape */;
+			targetProxy = E64E89C62536F9280097AE69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E64E895F25369BAD0097AE69 /* Main.storyboard */ = {
@@ -320,6 +394,48 @@
 			};
 			name = Release;
 		};
+		E64E89C82536F9280097AE69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FMBNG35Z38;
+				HEADER_SEARCH_PATHS = $CONFIGURATION_TEMP_DIR/myProjectName.build/DerivedSources;
+				INFOPLIST_FILE = BeautyShapeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppleDeveloperAcademyBinus.BeautyShapeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeautyShape.app/BeautyShape";
+			};
+			name = Debug;
+		};
+		E64E89C92536F9280097AE69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FMBNG35Z38;
+				HEADER_SEARCH_PATHS = $CONFIGURATION_TEMP_DIR/myProjectName.build/DerivedSources;
+				INFOPLIST_FILE = BeautyShapeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppleDeveloperAcademyBinus.BeautyShapeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeautyShape.app/BeautyShape";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +453,15 @@
 			buildConfigurations = (
 				E64E896B25369BB00097AE69 /* Debug */,
 				E64E896C25369BB00097AE69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E64E89CA2536F9280097AE69 /* Build configuration list for PBXNativeTarget "BeautyShapeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E64E89C82536F9280097AE69 /* Debug */,
+				E64E89C92536F9280097AE69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
